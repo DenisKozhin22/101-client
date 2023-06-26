@@ -1,0 +1,32 @@
+.pagination {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+	a {
+		padding: 6px 12px;
+		margin-right: 2px;
+		border-radius: 3px;
+		background-color: #fff;
+		color: RGBA(0, 0, 0, 0.80);
+		border: 1px solid #ddd;
+		&:hover {
+			background-color: #f6f6f6;
+		}
+	}
+
+	.active {
+		a {
+			background-color: RGBA(0, 0, 0, 0.80);
+			color: #fff;
+		}
+	}
+	.disabled {
+		a {
+			color: #ddd;
+			cursor: not-allowed;
+		}
+	}
+}
+
